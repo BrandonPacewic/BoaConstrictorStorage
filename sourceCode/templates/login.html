@@ -1,7 +1,28 @@
 {% extends "base.html" %} {% block title %}Login{% endblock %}
 
 {% block content %}
-    <h1>
-        This is the login page
-    </h1>
+<form method = "POST">
+    <br />
+    <h1 align = "center">Find Your Boa</h1>
+    <div class = "form-group">
+        <label for = "boa-inital"> <h3>Boa Name</h3></label>
+        <input 
+            type = "boa-inital"
+            class = "form-control"
+            id = "boa-inital"
+            placeholder = "Enter boa-name"
+        />
+    </div>
+    <div class = "form-group">
+        <label for = "boa-sequence"> <h3>Boa Sequence</h3></label>
+        <input 
+            type = "boa-sequence"
+            class = "form-control"
+            id = "boa-sequence"
+            placeholder = "Enter boa-sequence"
+        />
+    </div>
+    <br />
+    <button type = "submit" class = "btn btn-primary"><h8>Find Boa</h8></button>
+</form>
 {% endblock %}
