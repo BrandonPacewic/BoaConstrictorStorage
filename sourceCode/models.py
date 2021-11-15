@@ -3,7 +3,7 @@ from flask_login import UserMixin
 
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key = True)
-
+    boa_info = db.Column(db.String(10000))
 
 
 class userBoa(db.Model, UserMixin):
